@@ -1,0 +1,10 @@
+body {
+	background: rgb(194,235,187);
+	}
+#page {
+	width: 940px;
+	width: 720px;
+	margin: 50px auto;
+	padding: 5px 40px;
+	background-color: rgba(244,255,247,.9);
+	}	
