@@ -11,6 +11,7 @@ body {
 	background-color: rgba(244,255,247,.9);
 	box-shadow: 0 0 10px #374235;
 	border-radius: 10px;
+	overflow: auto;
 	}
 	
 /*Main heading Candace's Vegan Eats*/
@@ -94,4 +95,16 @@ q {
 	font-style: italic;
 	}
 		
+/*Division*/
 
+#main {
+	float: left;
+	width: 300px;
+	margin: 0px;
+		}
+
+#sidebar {
+	float: right;
+	width: 350px;
+	margin: 20px 0px;
+		}
