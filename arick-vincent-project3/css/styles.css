@@ -1,31 +1,38 @@
 body {
-	background: rgb(194,235,187);
+	background: rgb(194,235,187) url("../images/bg_repeat.gif") repeat fixed 0 0;
 	}
 
 /*Foreground*/
 
 #page {
-	width: 720px;
+	width: 85%;
 	margin: auto;
-	padding: 5px 40px;
+	padding: .6% 5%;
 	background-color: rgba(244,255,247,.9);
 	box-shadow: 0 0 10px #374235;
 	border-radius: 10px;
 	overflow: auto;
 	}
 	
-/*Main heading Candace's Vegan Eats*/
+/*Main heading Candace's Vegan Eats with background gradient*/
 
 h1 {
-	background-color: rgb(178,135,137);
-	padding: 10px;
+	padding: 1%;
 	color: rgb(255,255,255);
 	font-size: 3em;
 	font-family: "Muli", sans-serif;
 	letter-spacing: -.04em;
 	text-align: center;
-	text-shadow: 1px 1px 2px #664D4E;
+	text-shadow: 1px 1px 3px #664D4E;
+	box-shadow: 2px 2px 3px #374235;
 	border-radius: 10px;
+	background: #af6063;
+	background: -moz-linear-gradient(top, #af6063 74%, #af7577 99%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(74%,#af6063), color-stop(99%,#af7577));
+	background: -webkit-linear-gradient(top, #af6063 74%,#af7577 99%);
+	background: -o-linear-gradient(top, #af6063 74%,#af7577 99%);
+	background: -ms-linear-gradient(top, #af6063 74%,#af7577 99%);
+	background: linear-gradient(to bottom, #af6063 74%,#af7577 99%);
 	}
 	
 /*Supporting lifestyle and Vegan lifestyle*/
@@ -33,7 +40,7 @@ h1 {
 h2 {
 	font-family: "Muli", sans-serif;
 	letter-spacing: -.04em;
-	padding-top: 10px;
+	padding-top: 1%;
 	}	
 	
 /*Paragraph and unordered list font and line spacing*/
@@ -50,18 +57,20 @@ ul li{
 	list-style-type: square;
 	}
 
-/*Top navigation bar*/	
+/*Top navigation bar with leaf icon*/	
 			
 nav {
 	border-top: 2px solid #374235;
 	border-bottom: 1px solid #374235;
-	margin-top: -20px;
+	margin-top: -3%;
+	background: url("../images/icon.png") no-repeat left center;
+	
 	}
 
 nav li {
 	font-size: 1.2em;
 	display: inline-block;
-	margin: 0px 50px;
+	margin: 0% 7%;
 	}
 	
 /*------Navigation bar link style and responses-------*/
@@ -69,7 +78,7 @@ nav li {
 /*Link Styling*/
 
 a:link {
-	color: #ffffff;
+	color: #000;
 	text-decoration: none;
 	}
 	
@@ -99,12 +108,22 @@ q {
 
 #main {
 	float: left;
-	width: 300px;
+	width: 39%;
 	margin: 0px;
+	padding: 0 10px 0 0
 		}
 
 #sidebar {
 	float: right;
-	width: 350px;
-	margin: 20px 0px;
+	width: 48%;
+	margin: 2%;
+	/*background-color: rgb(178,135,137);*/
 		}
+		
+/*Clear*/
+.clear {
+	clear: both;
+	}
+	
+
+			
