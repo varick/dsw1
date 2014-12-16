@@ -37,7 +37,7 @@ h1 {
 	
 /*Supporting lifestyle and Vegan lifestyle*/
 
-h2 {
+h2, h3 {
 	font-family: "Muli", sans-serif;
 	letter-spacing: -.04em;
 	padding-top: 1%;
@@ -45,10 +45,10 @@ h2 {
 	
 /*Paragraph and unordered list font and line spacing*/
 
-p,li { 
+p,li, figcaption  { 
 	font-family: Arial, Verdana, sans-serif;
 	line-height: 1.5em;
-	} 
+	} 		
 
 /*Vegan lifestyle easier than you think LIST*/
 
@@ -108,14 +108,14 @@ q {
 
 #main {
 	float: left;
-	width: 39%;
+	width: 50%;
 	margin: 0px;
 	padding: 0 10px 0 0
 		}
 
 aside {
 	float: right;
-	width: 48%;
+	width: 44%;
 	margin: 2%;
 	/*background-color: rgb(178,135,137);*/
 		}
@@ -124,6 +124,54 @@ aside {
 .clear {
 	clear: both;
 	}
+	
+/*Table*/
+
+table {
+	border: 1px solid #2d3738;
+	float: left;
+	width: 100%;
+	margin: 2%;
+	background-color: #bee2e4;
+	letter-spacing: .02em;
+	}
+	
+th {
+	text-align: left;	
+	}
+	
+td {
+	text-align: left;
+	}
+			
+th, td {
+	font-size: 90%;
+	margin: 0;
+	border: 1px solid #ffffff;
+	text-shadow: 1px 1px 1px #ffffff;
+	padding: 5px 10px;
+	font-family: Arial, Verdana, sans-serif;
+	line-height: 1.5em;
+	border-spacing: 2%;
+	}	
+tr:hover {
+	background-color: #e0e4be;	
+	}
+
+tr.even {
+	background-color: #F1F8FE;
+	}
+
+.price {
+	text-align: right;	
+	}	
+	
+/*Form*/
+
+p.form {
+	font-family: Arial, Verdana, sans-serif;
+	}	
+	
 	
 
 			
