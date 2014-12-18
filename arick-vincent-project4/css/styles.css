@@ -26,13 +26,12 @@ h1 {
 	text-shadow: 1px 1px 3px #664D4E;
 	box-shadow: 2px 2px 3px #374235;
 	border-radius: 10px;
-	background: #af6063;
-	background: -moz-linear-gradient(top, #af6063 74%, #af7577 99%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(74%,#af6063), color-stop(99%,#af7577));
-	background: -webkit-linear-gradient(top, #af6063 74%,#af7577 99%);
-	background: -o-linear-gradient(top, #af6063 74%,#af7577 99%);
-	background: -ms-linear-gradient(top, #af6063 74%,#af7577 99%);
-	background: linear-gradient(to bottom, #af6063 74%,#af7577 99%);
+	background: #fb83fa;
+	background: -moz-linear-gradient(top, #fb83fa 0%, #e93cec 100%);
+	background: -webkit-linear-gradient(top, #fb83fa 0%,#e93cec 100%);
+	background: -o-linear-gradient(top, #fb83fa 0%,#e93cec 100%);
+	background: -ms-linear-gradient(top, #fb83fa 0%,#e93cec 100%);
+	background: linear-gradient(to bottom, #fb83fa 0%,#e93cec 100%);
 	}
 	
 /*Supporting lifestyle and Vegan lifestyle*/
@@ -69,8 +68,8 @@ nav {
 
 nav li {
 	font-size: 1.2em;
-	display: inline-block;
-	margin: 0% 7%;
+	display: inline;
+	margin: 0 2% 0 4%;
 	}
 	
 /*------Navigation bar link style and responses-------*/
@@ -121,6 +120,7 @@ aside {
 		}
 		
 /*Clear*/
+
 .clear {
 	clear: both;
 	}
@@ -131,47 +131,84 @@ table {
 	border: 1px solid #2d3738;
 	float: left;
 	width: 100%;
-	margin: 2%;
+	margin-bottom: 10%;
 	background-color: #bee2e4;
 	letter-spacing: .02em;
 	}
 	
-th {
-	text-align: left;	
-	}
-	
-td {
-	text-align: left;
-	}
 			
 th, td {
-	font-size: 90%;
+	font-size: .9em;
 	margin: 0;
 	border: 1px solid #ffffff;
 	text-shadow: 1px 1px 1px #ffffff;
 	padding: 5px 10px;
 	font-family: Arial, Verdana, sans-serif;
 	line-height: 1.5em;
-	border-spacing: 2%;
+	border-spacing: 2px;
+	text-align: left;
 	}	
-tr:hover {
-	background-color: #e0e4be;	
-	}
 
 tr.even {
 	background-color: #F1F8FE;
 	}
+	
+tr:hover {
+	background-color: #fcff03;	
+	}	
 
 .price {
 	text-align: right;	
 	}	
-	
+		
 /*Form*/
 
-p.form {
+fieldset {
+	width: 47%;
+	margin: 20px 0 0 0;
+	border: 1px solid #2d3738;
+	border-radius: 5px;
+	background-color: #F1F8FE;
+	}
+	
+legend {
+	background-color: #fb83fa;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	padding: 10px;
+	text-transform: uppercase;
 	font-family: Arial, Verdana, sans-serif;
-	}	
-	
-	
+	font-size: 1em;
+	color: rgb(255,255,255);
+	}
 
-			
+#submit input {
+	border: 1px solid #063;
+	padding: 5px;
+	margin-top: 10px;
+	border-radius: 5px;	
+	width: 10%;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: .9em;
+}	
+
+.box {
+	margin: 10px 0 0 0;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: .9em;
+}
+	
+.title {
+	float: left;
+	width: 100px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+input:hover, input:focus {
+	background-color: #fcff03;
+}
+
+textarea:hover, input:focus {
+	background-color: #fcff03;	
+}			

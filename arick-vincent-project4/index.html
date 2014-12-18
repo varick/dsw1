@@ -12,8 +12,10 @@
 				<h1>Candace’s Vegan Eats</h1>
 				<nav>
 					<ul>
-						<li><a href="#restaurant_lifestyle">A Restaurant Supporting a Lifestyle</a></li>
+						<li><a href="#restaurant_lifestyle">Supporting a Lifestyle</a></li>
 						<li><a href="#vegan_lifestyle">Vegan Lifestyle</a></li>
+						<li><a href="#menu">Menu</a></li>
+						<li><a href="#contact">Contact Us</a></li>
 					</ul>
 				</nav>
 		</header>
@@ -38,7 +40,7 @@
 			</ul>
 			<p><q>Compassionate eating is good for the heart.</q><br>
 				Candace Arick</p>
-		<h3>Menu</h3>
+		<h3 id="menu">Menu</h3>
 		<table>
 			<tr>
 				<th scope="row">Vegan Burger</th>
@@ -82,22 +84,45 @@
 				<figcaption>Tofu scramble</figcaption>
 			</figure>
 		</aside>
-		<form>
-			<form action="http://www.example.com/subscribe.php"method="get">
-				<p class="form">Full Name <input type="text" name="username" max length="30"/></p>
-				<p class="form">E-mail <input type="text" name="email" max length="30"/></p>
-				<p class="form">Details</p>
-				<textarea name="comments">Enter here...</textarea>
-				<p class="form">Would you like more information on?<br/>
-				<input type="checkbox" name="info" value="lifestyle"/> Vegan Lifestyle
-				<input type="checkbox" name="info" value="restaurant"/> Restaurant
-				<input type="checkbox" name="info" value="recipes"/> Recipes
-				<p>Do you want to receive monthly restaurant promotions?</p>
-				<select name="yes no">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				<p>Check it out</p>
-				<input type="submit" name="submit" value="Submit"/>	
+		<form action="http://www.example.com/form.php" method="get">
+			<fieldset>
+				<legend id="contact">Contact Us</legend>	
+				<p>
+					<label for="name" class="title">Full Name</label>
+					<input type="text" name="name" id="name" required="required" placeholder="John Smith"/>	
+				</p>
+				<p>
+					<label for="email" class="title">E-mail</label>
+					<input type="text" name="email" id="email" placeholder="user@mail.com"/>
+				</p>
+				<p>
+					<label for="details" class="title">Details</label>
+					<textarea name="details" id="details" placeholder="Enter comments"></textarea>
+				</p>
+				<p>
+					<label for="info" class="info">What would like more information on?</label>
+					<div class="box">
+						<input type="checkbox" value="lifestyle" name="info"/>Vegan Lifestyle
+					</div>
+					<div class="box">
+						<input type="checkbox" value="restaurant" name="info"/>Candace's Vegan Eats 
+					</div>
+					<div class="box">
+						<input type="checkbox" value="recipes" name="info"/>Recipes
+					</div>
+				</p>	
+				<p>
+					<label for="about">How did you hear about us?</label>
+					 <select name="about" id="about">
+						<option value="1">Search Engine</option>
+						<option value="2">Blogs</option>
+						<option value="3">Friend</option>
+					 </select>	
+				</p>
+			</fieldset>
+			<div id="submit">
+				<input type="submit" value="Submit"/>
+			</div>	
 		</form>
 		<footer>
 			<p class="clear"><a href="http://en.wikipedia.org/wiki/Veganism">Food images</a></p>
